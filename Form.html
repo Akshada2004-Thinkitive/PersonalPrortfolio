@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- <form action=""> -->
+<!--  -->
+        <!-- username <input type="text"><br> -->
+        <!-- password <input type="password"> <br> -->
+<!--  -->
+        <!-- <button >Submit</button> -->
+<!--  -->
+<!--  -->
+    <!-- </form> -->
+
+
+
+    <h1>Student Registration Form</h1>
+
+    <form action="" oninput="sum.value=parseInt(math.value)+parseInt(English.value)+parseInt(Science.value)">
+
+   
+        <fieldset>
+            <legend>Personal Information</legend>
+                 <label for="name" name="name">Enter Full Name</label>
+                <input type="text" id="name" placeholder="akshada anil kolhe" required><br><br>
+                <label for="email">Enter Email</label>
+                <input type="email" id="email" placeholder="xyz@gmail.com" pattern="[a-z@.com]"><br><br>
+                <label for="password">Enter Password</label>
+                <input type="password" id="password" placeholder="sdkfffhbv" pattern="[a-zA-Z]{5}"><br><br>
+                <label for="image">upload your photo</label>
+                <input type="image" name="" id="image">
+                <!-- <label for="address">Enter Address</label> -->
+        </fieldset><br><br>
+        
+
+
+        <label for="collages">Enter Collage Name</label>
+        <input list="collages">
+        <datalist id="collages">
+            <option value="Jaihind Collage"></option>
+            <option value="Fc Collage"></option>
+            <option value="MIT Collage"></option>
+            <option value="Morden Collage"></option>
+            <option value="Dy.Patil Collage"></option>
+        </datalist><br><br>
+
+        <label for="">hide data</label>
+        <input type="hidden">
+
+        <label for="geneder">Gender</label><br>
+        
+        <input type="radio" id="female"><label for="female">female</label>
+        <input type="radio" name="" id="male">
+        <label for="male">Male</label>
+        
+        <br><br>
+
+
+        <label for="">Skills</label>
+        <br><br>
+        <input type="checkbox" id="java"><label for="java">java</label>
+        <br><br>
+        <input type="checkbox" id="Html"><label for="Html">Html</label>
+        <br><br>
+        <input type="checkbox" id="Css"><label for="Css">Css</label>
+        <br><br>
+        <input type="checkbox" id="Python"><label for="Python">Python</label>
+        <br><br>
+        <input type="checkbox" id="C++"><label for="C++">C++</label>
+
+        <br><br>
+        <label for="dob">enter DOB</label>
+        <input type="date" name="" id="dob">
+        <br><br>
+        
+        <label for="time">enter Time</label>
+        <input type="time" id="time"><br><br>
+
+        <label for="file">Upload Resume</label>
+        <input type="file" id="file">
+        <br><br>
+        <label for="search">Search here</label>
+        <input type="search">
+
+        <br><br>
+        <label for="math">Math</label>
+        <input type="number" id="math" value="50"><br><br>
+        <label for="English">English</label>
+        <input type="number" id="English" value="60"><br><br>
+        <label for="Science">Science</label>
+        <input type="number" id="Science" value="70"><br><br>
+
+        result:<output name="sum"></output><br><br>
+    
+        <label for="categories">Choose language</label>
+        <select name="categories" id="categories" autofocus >
+            <option value="">select</option>
+            <option value="">java</option>
+            <option value="">Python</option>
+            <option value="">Html</option>
+            <option value="">Css</option>
+            <option value="">javascript</option>
+        </select><br><br>
+
+        <textarea name="feedback" id="feedback" rows="5" cols="50">Enter feeback here</textarea>
+
+    </form>
+
+</body>
+</html>
